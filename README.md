@@ -14,10 +14,6 @@ This program is designed to automatically generate C++ code based on user input.
 2. Only Use Windows User:
 
 ## Install
-1.Click Main.bat file
-2.Show to options choose any one
-3.Any showing error To run requirements.txt And Copy Command And Phast Terminal "pip install -r requirements.txt"
-## Features
 - Click Main.bat file
 - Show to options choose any one.
 - Any showing error To run requirements.txt And Copy Command And Phast Terminal "pip install -r requirements.txt"
