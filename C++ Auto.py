@@ -124,7 +124,7 @@ cpp_programs = {
 
     "Store and Display Information Using Structure": '#include <iostream>\n#include <cstring>\n\nusing namespace std;\n\nstruct Person {\n\tchar name[50];\n\tint age;\n\tfloat salary;\n};\n\nint main() {\n\tPerson p;\n\tcout << "Enter Full name: ";\n\tcin.get(p.name, 50);\n\tcout << "Enter age: ";\n\tcin >> p.age;\n\tcout << "Enter salary: ";\n\tcin >> p.salary;\n\tcout << "\nDisplaying Information." << endl;\n\tcout << "Name: " << p.name << endl;\n\tcout << "Age: " << p.age << endl;\n\tcout << "Salary: " << p.salary << endl;\n\treturn 0;\n}'
 
-    "Simple Interest Calculator" '#include <iostream>\n\nusing namespace std;\n\nint main() {\n    double principle, rate, time, SI;\n    \n    cout << "Enter principle amount: ";\n    cin >> principle;\n    \n    cout << "Enter rate of interest: ";\n    cin >> rate;\n    \n    cout << "Enter time (in years): ";\n    cin >> time;\n    \n    SI = (principle * rate * time) / 100;\n    \n    cout << "Simple Interest = " << SI;\n    \n    return 0;\n}\n'
+    "Simple Interest Calculator" '#include <iostream>\n\nusing namespace std;\n\nint main() {\n    double principle, rate, time, SI;\n    \n    cout << "Enter principle amount: ";\n    cin >> principle;\n    \n    cout << "Enter rate of interest: ";\n    cin >> rate;\n    \n    cout << "Enter time (in years): ";\n    cin >> time;\n    \n    SI = (principle * rate * time) / 100;\n    \n    cout << "Simple Interest = " << SI;\n    \n    return 0;\n}\n',
 
      "Simple Interest Calculator" '''#include <iostream>
 
@@ -193,7 +193,8 @@ int main() {
 
 "Binary Search": '#include <iostream>\n\nint binarySearch(int arr[], int left, int right, int target) {\n\twhile (left <= right) {\n\t\tint mid = left + (right - left) / 2;\n\t\tif (arr[mid] == target)\n\t\t\treturn mid;\n\t\tif (arr[mid] < target)\n\t\t\tleft = mid + 1;\n\t\telse\n\t\t\tright = mid - 1;\n\t}\n\treturn -1;\n}\n\nint main() {\n\tint arr[] = {1, 2, 3, 4, 5};\n\tint n = sizeof(arr) / sizeof(arr[0]);\n\tint target = 4;\n\tint result = binarySearch(arr, 0, n - 1, target);\n\tif (result != -1)\n\t\tstd::cout << "Element found at index " << result << std::endl;\n\telse\n\t\tstd::cout << "Element not found in the array." << std::endl;\n\treturn 0;\n}',
 
-"Bubble Sort": '#include <iostream>\n\nvoid bubbleSort(int arr[], int n) {\n\tfor (int i = 0; i < n - 1; ++i) {\n\t\tfor (int j = 0; j < n - i - 1; ++j) {\n\t\t\tif (arr[j] > arr[j + 1]) {\n\t\t\t\tint temp = arr[j];\n\t\t\t\tarr[j] = arr[j + 1];\n\t\t\t\tarr[j + 1] = temp;\n\t\t\t}\n\t\t}\n\t}\n}\n\nint main() {\n\tint arr[] = {5, 2, 1, 3, 4};\n\tint n = sizeof(arr) / sizeof(arr[0]);\n\tbubbleSort(arr, n);\n\tstd::cout << "Sorted array: ";\n\tfor (int i = 0; i < n; ++i)\n\t\tstd::cout << arr[i] << " ";\n\tstd::cout << std::endl;\n\treturn 0;\n}'
+"Bubble Sort": '#include <iostream>\n\nvoid bubbleSort(int arr[], int n) {\n\tfor (int i = 0; i < n - 1; ++i) {\n\t\tfor (int j = 0; j < n - i - 1; ++j) {\n\t\t\tif (arr[j] > arr[j + 1]) {\n\t\t\t\tint temp = arr[j];\n\t\t\t\tarr[j] = arr[j + 1];\n\t\t\t\tarr[j + 1] = temp;\n\t\t\t}\n\t\t}\n\t}\n}\n\nint main() {\n\tint arr[] = {5, 2, 1, 3, 4};\n\tint n = sizeof(arr) / sizeof(arr[0]);\n\tbubbleSort(arr, n);\n\tstd::cout << "Sorted array: ";\n\tfor (int i = 0; i < n; ++i)\n\t\tstd::cout << arr[i] << " ";\n\tstd::cout << std::endl;\n\treturn 0;\n}',
+    "Hello, World! Program": '#include <iostream>\n\nusing namespace std;\n\nint main() {\n\tcout << "Hello, World!" << endl;\n\treturn 0;\n}',
 }
 
 
